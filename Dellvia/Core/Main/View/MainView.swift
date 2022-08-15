@@ -50,10 +50,11 @@ extension MainView{
     private var mapView: some View {
        
         ZStack{
-            MapView(map: h.$map, manager: h.$manager, alert: h.$alert, source: h.$source, destination: h.$destination, name: h.$name, distance: h.$distance, time: h.$time, show: h.$show)
-                .onAppear {
-                    h.manager.requestAlwaysAuthorization()
-                }
+                MapView(map: h.$map, manager: h.$manager, alert: h.$alert, source: h.$source, destination: h.$destination, name: h.$name, distance: h.$distance, time: h.$time, show: h.$show)
+                    .onAppear {
+                        h.manager.requestAlwaysAuthorization()
+                    }
+            
             Color("main").opacity(0.0)
         }
         .frame(maxHeight: 175)
