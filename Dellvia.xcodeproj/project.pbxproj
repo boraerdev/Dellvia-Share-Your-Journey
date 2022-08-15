@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A10790128AA4FE500EE381C /* DellviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10790028AA4FE500EE381C /* DellviaApp.swift */; };
+		0A10790328AA4FE500EE381C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10790228AA4FE500EE381C /* ContentView.swift */; };
+		0A10790528AA4FE600EE381C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A10790428AA4FE600EE381C /* Assets.xcassets */; };
+		0A10790828AA4FE600EE381C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A10790728AA4FE600EE381C /* Preview Assets.xcassets */; };
+		0A10791528AA500600EE381C /* BookedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10791028AA500600EE381C /* BookedView.swift */; };
+		0A10791628AA500600EE381C /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10791128AA500600EE381C /* Loader.swift */; };
+		0A10791728AA500600EE381C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10791228AA500600EE381C /* MapView.swift */; };
+		0A10791828AA500600EE381C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10791328AA500600EE381C /* SearchView.swift */; };
+		0A10791928AA500600EE381C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10791428AA500600EE381C /* Home.swift */; };
+		0A10792328AA52D800EE381C /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10792028AA52D800EE381C /* LoginPage.swift */; };
+		0A10792428AA52D800EE381C /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10792128AA52D800EE381C /* Auth.swift */; };
+		0A10792528AA52D800EE381C /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10792228AA52D800EE381C /* SignUpPage.swift */; };
+		0A10792828AA52FE00EE381C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10792728AA52FE00EE381C /* UserModel.swift */; };
+		0A10792E28AA539900EE381C /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10792D28AA539900EE381C /* UserServices.swift */; };
+		0A10793128AA53F200EE381C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A10793028AA53F200EE381C /* FirebaseAuth */; };
+		0A10793328AA53F200EE381C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A10793228AA53F200EE381C /* FirebaseFirestore */; };
+		0A10793528AA53F200EE381C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A10793428AA53F200EE381C /* FirebaseFirestoreSwift */; };
+		0A10793728AA553F00EE381C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A10793628AA553F00EE381C /* GoogleService-Info.plist */; };
+		0A10793A28AA5A6500EE381C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10793928AA5A6500EE381C /* TabView.swift */; };
+		0A581F5228AA9C2F0072C7B9 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A581F5128AA9C2F0072C7B9 /* TabBar.swift */; };
+		0A581F5928AA9D180072C7B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A581F5828AA9D180072C7B9 /* MainView.swift */; };
+		0A581F5B28AA9E440072C7B9 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A581F5A28AA9E440072C7B9 /* SettingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A1078FD28AA4FE500EE381C /* Dellvia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dellvia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A10790028AA4FE500EE381C /* DellviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DellviaApp.swift; sourceTree = "<group>"; };
+		0A10790228AA4FE500EE381C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A10790428AA4FE600EE381C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A10790728AA4FE600EE381C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A10791028AA500600EE381C /* BookedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedView.swift; sourceTree = "<group>"; };
+		0A10791128AA500600EE381C /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		0A10791228AA500600EE381C /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0A10791328AA500600EE381C /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0A10791428AA500600EE381C /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0A10792028AA52D800EE381C /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		0A10792128AA52D800EE381C /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		0A10792228AA52D800EE381C /* SignUpPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		0A10792728AA52FE00EE381C /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0A10792D28AA539900EE381C /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		0A10793628AA553F00EE381C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A10793928AA5A6500EE381C /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		0A581F5128AA9C2F0072C7B9 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0A581F5828AA9D180072C7B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A581F5A28AA9E440072C7B9 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A1078FA28AA4FE500EE381C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A10793128AA53F200EE381C /* FirebaseAuth in Frameworks */,
+				0A10793328AA53F200EE381C /* FirebaseFirestore in Frameworks */,
+				0A10793528AA53F200EE381C /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1078F428AA4FE500EE381C = {
+			isa = PBXGroup;
+			children = (
+				0A1078FF28AA4FE500EE381C /* Dellvia */,
+				0A1078FE28AA4FE500EE381C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A1078FE28AA4FE500EE381C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A1078FD28AA4FE500EE381C /* Dellvia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A1078FF28AA4FE500EE381C /* Dellvia */ = {
+			isa = PBXGroup;
+			children = (
+				0A10792C28AA538500EE381C /* Services */,
+				0A10792628AA52F100EE381C /* Model */,
+				0A10790E28AA4FF200EE381C /* Core */,
+				0A10790028AA4FE500EE381C /* DellviaApp.swift */,
+				0A10790228AA4FE500EE381C /* ContentView.swift */,
+				0A10793628AA553F00EE381C /* GoogleService-Info.plist */,
+				0A10790428AA4FE600EE381C /* Assets.xcassets */,
+				0A10790628AA4FE600EE381C /* Preview Content */,
+			);
+			path = Dellvia;
+			sourceTree = "<group>";
+		};
+		0A10790628AA4FE600EE381C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A10790728AA4FE600EE381C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A10790E28AA4FF200EE381C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A581F5528AA9CF20072C7B9 /* Settings */,
+				0A581F5428AA9CED0072C7B9 /* Main */,
+				0A581F5328AA9C5B0072C7B9 /* New Group */,
+				0A581F5028AA9C1F0072C7B9 /* Components */,
+				0A10793828AA5A1500EE381C /* TabView */,
+				0A10791F28AA521000EE381C /* Auth */,
+				0A10790F28AA4FF900EE381C /* DellviaMap */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A10790F28AA4FF900EE381C /* DellviaMap */ = {
+			isa = PBXGroup;
+			children = (
+				0A10791028AA500600EE381C /* BookedView.swift */,
+				0A10791428AA500600EE381C /* Home.swift */,
+				0A10791128AA500600EE381C /* Loader.swift */,
+				0A10791228AA500600EE381C /* MapView.swift */,
+				0A10791328AA500600EE381C /* SearchView.swift */,
+			);
+			path = DellviaMap;
+			sourceTree = "<group>";
+		};
+		0A10791F28AA521000EE381C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0A10792128AA52D800EE381C /* Auth.swift */,
+				0A10792028AA52D800EE381C /* LoginPage.swift */,
+				0A10792228AA52D800EE381C /* SignUpPage.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0A10792628AA52F100EE381C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A10792728AA52FE00EE381C /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A10792C28AA538500EE381C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A10792D28AA539900EE381C /* UserServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0A10793828AA5A1500EE381C /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				0A10793C28AA5A6D00EE381C /* ViewModel */,
+				0A10793B28AA5A6900EE381C /* View */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		0A10793B28AA5A6900EE381C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A10793928AA5A6500EE381C /* TabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A10793C28AA5A6D00EE381C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A581F5028AA9C1F0072C7B9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0A581F5128AA9C2F0072C7B9 /* TabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0A581F5328AA9C5B0072C7B9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0A581F5428AA9CED0072C7B9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0A581F5628AA9D0B0072C7B9 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0A581F5528AA9CF20072C7B9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0A581F5728AA9D0E0072C7B9 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0A581F5628AA9D0B0072C7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A581F5828AA9D180072C7B9 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A581F5728AA9D0E0072C7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A581F5A28AA9E440072C7B9 /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A1078FC28AA4FE500EE381C /* Dellvia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A10790B28AA4FE600EE381C /* Build configuration list for PBXNativeTarget "Dellvia" */;
+			buildPhases = (
+				0A1078F928AA4FE500EE381C /* Sources */,
+				0A1078FA28AA4FE500EE381C /* Frameworks */,
+				0A1078FB28AA4FE500EE381C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dellvia;
+			packageProductDependencies = (
+				0A10793028AA53F200EE381C /* FirebaseAuth */,
+				0A10793228AA53F200EE381C /* FirebaseFirestore */,
+				0A10793428AA53F200EE381C /* FirebaseFirestoreSwift */,
+			);
+			productName = Dellvia;
+			productReference = 0A1078FD28AA4FE500EE381C /* Dellvia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A1078F528AA4FE500EE381C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0A1078FC28AA4FE500EE381C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A1078F828AA4FE500EE381C /* Build configuration list for PBXProject "Dellvia" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A1078F428AA4FE500EE381C;
+			packageReferences = (
+				0A10792F28AA53F200EE381C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 0A1078FE28AA4FE500EE381C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A1078FC28AA4FE500EE381C /* Dellvia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A1078FB28AA4FE500EE381C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A10790828AA4FE600EE381C /* Preview Assets.xcassets in Resources */,
+				0A10790528AA4FE600EE381C /* Assets.xcassets in Resources */,
+				0A10793728AA553F00EE381C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A1078F928AA4FE500EE381C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A10792328AA52D800EE381C /* LoginPage.swift in Sources */,
+				0A10793A28AA5A6500EE381C /* TabView.swift in Sources */,
+				0A10790328AA4FE500EE381C /* ContentView.swift in Sources */,
+				0A10791528AA500600EE381C /* BookedView.swift in Sources */,
+				0A10791728AA500600EE381C /* MapView.swift in Sources */,
+				0A581F5B28AA9E440072C7B9 /* SettingView.swift in Sources */,
+				0A10792E28AA539900EE381C /* UserServices.swift in Sources */,
+				0A10791628AA500600EE381C /* Loader.swift in Sources */,
+				0A10791828AA500600EE381C /* SearchView.swift in Sources */,
+				0A581F5228AA9C2F0072C7B9 /* TabBar.swift in Sources */,
+				0A10792528AA52D800EE381C /* SignUpPage.swift in Sources */,
+				0A10790128AA4FE500EE381C /* DellviaApp.swift in Sources */,
+				0A10791928AA500600EE381C /* Home.swift in Sources */,
+				0A10792428AA52D800EE381C /* Auth.swift in Sources */,
+				0A581F5928AA9D180072C7B9 /* MainView.swift in Sources */,
+				0A10792828AA52FE00EE381C /* UserModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A10790928AA4FE600EE381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A10790A28AA4FE600EE381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A10790C28AA4FE600EE381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dellvia/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ3CX8Z5MV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = ":)";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = ":)";
+				INFOPLIST_KEY_NSLocationUsageDescription = ":)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = ":)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraerdem.Dellvia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0A10790D28AA4FE600EE381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dellvia/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ3CX8Z5MV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = ":)";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = ":)";
+				INFOPLIST_KEY_NSLocationUsageDescription = ":)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = ":)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraerdem.Dellvia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A1078F828AA4FE500EE381C /* Build configuration list for PBXProject "Dellvia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A10790928AA4FE600EE381C /* Debug */,
+				0A10790A28AA4FE600EE381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A10790B28AA4FE600EE381C /* Build configuration list for PBXNativeTarget "Dellvia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A10790C28AA4FE600EE381C /* Debug */,
+				0A10790D28AA4FE600EE381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A10792F28AA53F200EE381C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A10793028AA53F200EE381C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A10792F28AA53F200EE381C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0A10793228AA53F200EE381C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A10792F28AA53F200EE381C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0A10793428AA53F200EE381C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A10792F28AA53F200EE381C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A1078F528AA4FE500EE381C /* Project object */;
+}
