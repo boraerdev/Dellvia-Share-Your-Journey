@@ -10,6 +10,8 @@ import SwiftUI
 struct MainView: View {
     @State var goMap: Bool = false
     var h = Home()
+    @StateObject var mainVm = MainViewModel()
+    @State var isAnimated: Bool = false
     var body: some View {
         ZStack{
             Color("bg").ignoresSafeArea()
@@ -20,15 +22,23 @@ struct MainView: View {
                         .fontWeight(.light)
                     mapView
                     
-                    Text("Aktif Çağrılarım").font(.system(.body, design: .rounded))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.vertical,32)
-                    
-                    Spacer()
-                    
-                    
-                        
-                        
+                    ScrollView{
+                        Text("Aktif Çağrılarım").font(.system(.body, design: .rounded))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical,32)
+                        if mainVm.activeCalls.isEmpty{
+                            Text("Henüz hiç yolculuk planlamadın. Artı butonuna tıklayarak hemen bir tane oluştur!")
+                                .padding(32)
+                                .foregroundColor(Color("secondary"))
+                                .font(.system(.footnote, design: .rounded))
+                                .multilineTextAlignment(.center)
+                        }else {
+                            ForEach(mainVm.activeCalls) { call in
+                                CallView(gelenCell: call)
+                                    .padding(.bottom,12)
+                            }
+                        }
+                    }
                 }
                 .fullScreenCover(isPresented: $goMap, content: {
                     Home()

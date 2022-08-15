@@ -1,10 +1,4 @@
-//
-//  MapView.swift
-//  Uber Clone
-//
-//  Created by Balaji on 29/04/20.
-//  Copyright © 2020 Balaji. All rights reserved.
-//
+
 
 import SwiftUI
 import MapKit

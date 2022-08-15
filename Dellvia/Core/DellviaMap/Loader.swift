@@ -1,10 +1,4 @@
-//
-//  Loader.swift
-//  Uber Clone
-//
-//  Created by Balaji on 29/04/20.
-//  Copyright © 2020 Balaji. All rights reserved.
-//
+
 
 import SwiftUI
 
@@ -30,7 +24,7 @@ struct Loader : View {
                         }
                 }
                 
-                Text("Please Wait....")
+                Text("Bekleyin...")
             }
             .padding(.vertical, 25)
             .padding(.horizontal, 40)

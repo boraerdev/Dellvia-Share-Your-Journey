@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  Uber Clone
-//
-//  Created by Balaji on 29/04/20.
-//  Copyright © 2020 Balaji. All rights reserved.
-//
 
 import SwiftUI
 import MapKit
@@ -29,6 +22,8 @@ struct Home : View {
     @State var search = false
     @Environment (\.presentationMode) var presentationMode
     @EnvironmentObject var authVm : AuthViewModel
+    @State var qrUrl : String = ""
+    @StateObject var mainVm = MainViewModel()
     
     var body: some View{
         
@@ -177,9 +172,22 @@ struct Home : View {
             
             if self.book{
                 
-                Booked(data: self.$data, doc: self.$doc, loading: self.$loading, book: self.$book)
+                Booked(data: self.$data, doc: self.$doc, loading: self.$loading, book: self.$book, qrUrl: self.$qrUrl)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(.black.opacity(0.2))
+                    .overlay(
+                        VStack{
+                            Text("Başarı ile çağrı yaptın. Eğer bu işlemi yanlışlıkla yaptıysan hemen \"İptal Et\" butonuna tıklayarak iptal edebilir ya da \"Devam Et\" butonuna tıklayarak çağrı listene ekleyebilirsin. Daha sonrasında ana ekrandan takibini gerçekleştirmeyi unutma, iyi yolculuklar!")
+                                .font(.caption2)
+                                .foregroundColor(Color("main"))
+                                .multilineTextAlignment(.center)
+                        }
+                            .padding()
+                            .background(.background, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 32)
+                        ,alignment: .bottom
+                    )
 
             }
             
@@ -208,20 +216,32 @@ struct Home : View {
         guard let user = authVm.currentUser else {
             return
         }
+        
+        
+        
         userInfo = "\(user.ad) \(user.soyad)"
-        doc.setData(["name":userInfo,"from":from,"authorUid": user.id ,"to":to,"distance":self.distance,"fair": (self.distance as NSString).floatValue * 1.2]) { (err) in
-            
-            if err != nil{
-                
-                print((err?.localizedDescription)!)
-                return
-            }
+        
             
             
             let filter = CIFilter(name: "CIQRCodeGenerator")
             filter?.setValue(self.doc.data(using: .ascii), forKey: "inputMessage")
             
             let image = UIImage(ciImage: (filter?.outputImage?.transformed(by: CGAffineTransform(scaleX: 5, y: 5)))!)
+            
+            ImageServices.shared.uploadImage(image: image) { url in
+                qrUrl = url
+                doc.setData(["destinationName": self.name, "timestamp": Date(), "authorName":userInfo,"qrUrl": url,"from":from,"doc":self.doc,"authorUid": user.id ,"to":to,"distance":self.distance,"fair": (self.distance as NSString).floatValue * 0.4]) { (err) in
+                    
+
+                    if err != nil{
+                        
+                        print((err?.localizedDescription)!)
+                        return
+                    }
+                    
+                    
+                    
+            }
             
             self.data = image.pngData()!
             
