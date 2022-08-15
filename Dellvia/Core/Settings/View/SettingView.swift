@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct SettingView: View {
+    @EnvironmentObject var authVm : AuthViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color("bg").ignoresSafeArea()
+            VStack{
+                Text("Çıkış Yap")
+                    .foregroundColor(Color("main2"))
+                    .padding()
+                    .padding(.horizontal)
+                    .onTapGesture {
+                        authVm.logOut()
+                    }
+            }
+        }
     }
 }
 
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
-    }
-}
